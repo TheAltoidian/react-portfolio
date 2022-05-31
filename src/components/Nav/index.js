@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-function Nav() {
+function Nav(props) {
+
+    const {
+        categories =[],
+        setCurrentCategory,
+        currentCategory,
+    } = props;
+
+    useEffect(() => {
+        document.title = currentCategory.name;
+    }, [currentCategory]);
 
     return (
-        <header>
+        <header className="flex-row px-1">
             <h2>
                 <a href="/">
                     <span>Cullen Casey's portfolio</span>
@@ -11,17 +21,17 @@ function Nav() {
             </h2>
             <nav>
                 <ul className="flex-row">
-                    <li>
-                        <a href="#about">
-                            About me
-                        </a>
-                    </li>
-                    <li>
-                        <span>Contact</span>
-                    </li>
-                    <li>
-                        <span>Portfolio</span>
-                    </li>
+                    {categories.map((category) => (
+                        <li className={`mx-1 ${currentCategory.name === category.name && 'navActive'
+                            }`} key={category.name}>
+                            <a href={`#${category.name}`} onClick={() => {
+                                setCurrentCategory(category)
+                            }}
+                            >
+                                {category.name}
+                            </a>
+                        </li>
+                    ))}
                 </ul>
             </nav>
         </header>
