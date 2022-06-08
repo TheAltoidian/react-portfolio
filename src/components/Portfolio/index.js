@@ -3,6 +3,7 @@ import catmap from "../../assets/images/catmap.png";
 import budgetTracker from "../../assets/images/budgetTracker.png";
 import teamMember from "../../assets/images/teamMember.png";
 import rpgGame from "../../assets/images/rpgGame.png";
+import portfolio from "../../assets/images/portfolio.png";
 
 function Portfolio() {
 
@@ -35,6 +36,13 @@ function Portfolio() {
                 <a href="https://github.com/TheAltoidian/Team-Member-Management" target="_blank">Team Member Management Githup</a>
                 <br></br>
                 <a href="https://cullen-team-member-manager.herokuapp.com/" target="_blank">Team Member Management deployed</a>
+            </div>
+            <div className="felx-row">
+                <img src={portfolio} style={{ width: "25%" }} alt="Portfolio" />
+                <br></br>
+                <a href="https://github.com/TheAltoidian/react-portfolio" target="_blank">Portfolio Githup</a>
+                <br></br>
+                <a href="https://thealtoidian.github.io/react-portfolio/" target="_blank">Portfolio deployed</a>
             </div>
         </section>
     );
