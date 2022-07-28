@@ -63,4 +63,28 @@ function ContactForm() {
     );
 }
 
-export default ContactForm;
+function Contact() {
+    return (
+        <div id="Contact" className="flex-row px-1">
+            <nav>
+                <div className="navActive">
+
+                    <p>
+                        <a href="mailto: cullenjcasey@gmail.com">Cullen's Email</a>
+                    </p>
+                    <p>
+                        <a href="https://github.com/TheAltoidian">Cullen's Github</a>
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/cullen-casey-096b9137/">Cullen's LinkedIn</a>
+                    </p>
+                    <p>
+                        <a href="https://stackoverflow.com/users/17547801/altoidian">Cullen's Stack Overflow</a>
+                    </p>
+                </div>
+            </nav>
+        </div>
+    )
+}
+
+export default Contact;

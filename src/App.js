@@ -5,14 +5,16 @@ import Nav from './components/Nav';
 import Contact from './components/Contact'
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
-import Footer from './components/Footer';
+import Skills from './components/Skills';
+// import Footer from './components/Footer';
 
 function App() {
   const [categories] = useState([
     { name: 'About' },
-    { name: 'Contact' },
+    { name: 'Skills' },
     { name: 'Portfolio' },
-    { name: 'Resume' }
+    { name: 'Resume' },
+    { name: 'Contact' }
   ]);
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
@@ -26,13 +28,16 @@ function App() {
       <main>
         <div>
           <About></About>
+          <Skills></Skills>
           <Portfolio></Portfolio>
-          {/* <Contact></Contact> */}
+          <p></p>
           <Resume></Resume>
+          <p></p>
+          <Contact></Contact>
         </div>
       </main>
       <div>
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
       </div>
     </div>
   );

@@ -1,8 +1,8 @@
 import React from "react";
 
-function Footer() {
+function Contact() {
     return (
-        <footer className="flex-row px-1">
+        <div className="flex-row px-1">
             <nav>
                 <ul className="navActive">
 
@@ -20,8 +20,8 @@ function Footer() {
                     </li>
                 </ul>
             </nav>
-        </footer>
+        </div>
     )
 }
 
-export default Footer;
+export default Contact;
