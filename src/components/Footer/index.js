@@ -7,6 +7,9 @@ function Footer() {
                 <ul className="navActive">
 
                     <li>
+                        <a href="mailto: cullenjcasey@gmail.com">Cullen's Email</a>
+                    </li>
+                    <li>
                         <a href="https://github.com/TheAltoidian">Cullen's Github</a>
                     </li>
                     <li>
